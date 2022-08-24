@@ -64,6 +64,19 @@ console.log('New password:', person.password);
 // Create a new empty array and add negative nums to it (newArr.push(n))
 // Then loop through newArr (for n in newArr:  n **= 2); return newArr
 
-(arr) => {
+let squaredNegNums = (arr) => {
+    new_arr = []
+    for (let n of arr){
+        if(n < 0 ){
+            new_arr.push(n);{
+                for (let i of new_arr){
+                    i **= 2
+                  }
+               }
+            }
+        }
+        return new_arr
+     }
+console.log('squared:', squaredNegNums([-10, -3, 4, -2, 8, 9, -3]))
 
-}
+// ??? I can't get it to square the numbers in new_arr. I'm sure this isn't right. It's so confusing!
